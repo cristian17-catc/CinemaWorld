@@ -1,0 +1,108 @@
+
+.contenedor{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.contenedor .bg-img{
+    opacity: .5;
+    width: 100%;
+    height: 600px;
+}
+.all{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.all h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    margin: 8px 0;
+}
+.all .img-sinop{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.all .img-sinop .img img{
+    width: 200px;
+    border-radius: 10px;
+    /* margin-right: 30px; */
+}
+.sinop{
+    background-color: rgb(0, 0, 0,.5);
+    width: 70%;
+}
+.info{
+    padding: 5px;
+}
+.info span{
+    color: white;
+}
+.info ul{
+    list-style: none;
+}
+.sinopsis{
+    width: 70%;
+    height: 100px;
+    overflow: auto;
+    padding: 5px;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+/* ------------------- PELICULAS ------------------- */
+ .peli{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.peli .conten-peli{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+}
+ .iframe{
+    position: absolute;
+    left: 0;
+    bottom: -455px;
+    width: 100%;
+    height: 1400px;
+    background: transparent;
+}
+
+/* ---------------- mediaquerys ------------------------------ */
+
+@media screen and (max-width: 780px){
+    .img-sinop .img{
+        width: 200px;
+        margin-right: 10px;
+    }
+    .all .img-sinop .img img{
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    ul .scroll{
+        height: 100px;
+        overflow: auto;
+    }
+    .sinopsis{
+        width: 90%;
+    }
+}

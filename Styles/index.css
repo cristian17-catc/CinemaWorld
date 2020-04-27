@@ -1,0 +1,75 @@
+
+/* ------------------- las images ------------------- */
+ .contenedor{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contenet-img  a{
+    text-decoration: none;
+    color: white;
+}
+
+.contenet-img{
+    width: 140px;
+    height: 200px;
+    position: relative;
+    margin:0 5px;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+.contenet-img img{
+    transition: all 1s ease-out;
+    width: 140px;
+    height: 200px;
+}
+.effect{
+    transform: translateY(90%);
+    padding: 5px;
+    color: rgb(231, 226, 226);
+    background-color: rgb(0, 0, 255,.5);
+    position: absolute;
+    bottom: 0;
+    transition: all 1s ease-out;
+
+}
+.year p{
+    color: blanchedalmond;
+    position: absolute;
+    top: 0;
+    background-color:rgb(0, 0, 0,.5);
+}
+.effect h4{
+    margin-bottom: 3px;
+    text-align: center;
+}
+.contenet-img:hover  .effect {
+    transform: translateY(0%);
+}
+.contenet-img img:hover{
+    transform: scale(1.1, 1.1);
+}
+@media screen and ( max-width: 670px){
+    .contenet-img{
+        width: 100px;
+        height: 160px;
+    }
+    .contenet-img img{
+        width: 100px;
+        height: 160px;
+    }
+    .year p,.effect h4{
+        font-size: 12px;
+    }
+    .effect{
+        transform: translateY(78%);
+    }
+    .effect span{
+        font-size: 10px;
+    }
+}

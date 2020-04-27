@@ -1,0 +1,61 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------- body ---------------- */
+body{
+    background-color: #080F28;
+    color: #8DA0BC;
+}
+
+/* ----------------- header ----------------- */
+header{
+    height: 120px;
+    
+}
+
+header, .header2{
+    width: 100%;
+    background-color: aqua;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header2{
+    height: 70px;
+    position: fixed;
+    background-color: rgb(0, 255, 255,.5);
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapper a{
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+}
+.logo{
+    font-size: 25px;
+}
+.wrapper .navs a{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 728px){
+    .wrapper .logo{
+        font-size: 20px;
+    }
+}
+
